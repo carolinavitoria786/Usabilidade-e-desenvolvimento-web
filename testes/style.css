@@ -1,0 +1,86 @@
+h1{
+    font: 'Arial';
+    color: rgb(56, 32, 122);
+}
+
+p{
+    color: rgb(21, 7, 58);
+    background-color: bisque;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+button{
+    width: 80px; /*redimenciona largura o tamanho dos botões no caso*/
+    height: 50px; /*redimenciona altura o tamanho dos botões no caso*/
+    margin: 10px 14px 10px 15px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 150px 150px 150px 150px;
+    font-family: 'Trebuchet MS';
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*adiciona sombreamento*/
+    font-size: 20px;
+
+}
+
+.listaDeTestes{
+    background-color:bisque; 
+    color: #000;
+    
+}
+
+.listaDeTestes02{ /*pinta o background e muda a cor do testo*/
+    background-color: aliceblue;
+    color: black;
+}
+
+img{ /*faz uma borda*/
+    border-radius: 60px 60px 150px 150px; /*arredonda as bordas em sentido horario*/
+    padding-top: 20px; /*para simplificar o comando pode se escrever "padding: 20px 20px 20px 20px"*/
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border: solid 5px rgb(2, 2, 2); /*adiciona uma borda e com "solid muda a espessura e a transparecia*/
+    width: 200px;
+    height: 250px;
+    background-color: orange;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: bounce 2s infinite; /*comando pra animação de pulo*/
+
+}
+
+body{
+    font-family: 'Trebuchet MS';
+    background-color: #f5cccc;
+    text-align: center; /*alinha o testo para que ele fique no centro*/
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #252525; 
+}
+a{
+    transition: transform 0.5s ease;
+    font-size: 20px;
+    background-color: #fffbfb;
+    border-radius: 4px;
+    padding: 6px;
+    margin: 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;/*remove o sublinhado dos links*/
+}
+a:hover{
+    color: white;
+    background-color: green;
+    transform: scale(1.05);
+}
+@keyframes bounce{ /*animação de pulo*/
+    0%, 20%, 50%, 80%, 100%{transform: translateY(0); }
+    40%{ transform: translateY(-10px);}
+    60%{ transform: translateY(-5px);}
+}
+
